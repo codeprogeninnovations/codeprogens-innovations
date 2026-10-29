@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { 
-  Code2, 
   Mail, 
   Send, 
   Check, 
   ShieldCheck, 
   Award, 
-  Globe2 
+  Users 
 } from "lucide-react";
 import { COMPANY_INFO } from "@/data/content";
 
@@ -33,22 +33,32 @@ export default function Footer() {
           
           {/* Brand Info (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <a href="#" className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-600 to-cyan-400 p-[1px]">
-                <div className="w-full h-full bg-[#090d16] rounded-[7px] flex items-center justify-center">
-                  <Code2 className="w-4 h-4 text-cyan-400" />
-                </div>
+            <a href="#" className="flex items-center gap-3">
+              <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-slate-800 bg-slate-950 shrink-0">
+                <Image
+                  src="/logo.jpg"
+                  alt="CODEPROGEN Logo"
+                  fill
+                  className="object-cover scale-150"
+                />
               </div>
-              <span className="font-extrabold tracking-wider text-white text-base font-mono">
-                CODEPROGENS
-                <span className="text-cyan-400 font-sans text-xs ml-1 px-1.5 py-0.5 rounded bg-cyan-950/60 border border-cyan-800/40">
-                  INNOVATIONS
+              <div className="flex flex-col">
+                <div className="flex items-center gap-1.5">
+                  <span className="font-black tracking-wider text-white text-base font-mono">
+                    CODEPROGEN
+                  </span>
+                  <span className="text-[10px] text-orange-400 font-sans font-bold px-1.5 py-0.5 rounded bg-orange-950/50 border border-orange-800/40">
+                    INNOVATIONS
+                  </span>
+                </div>
+                <span className="text-[9px] text-slate-400 font-semibold tracking-widest uppercase">
+                  INNOVATE • CREATE • GROW
                 </span>
-              </span>
+              </div>
             </a>
 
             <p className="text-slate-400 leading-relaxed text-xs">
-              Premier software engineering and digital transformation partner. We design, architect, and deliver resilient cloud backends, autonomous AI agent platforms, and modern high-concurrency web applications.
+              Premier software engineering and digital transformation partner founded by Harsh Goyal (CEO) and Vinay (CFO). We architect, engineer, and deploy resilient cloud backends, autonomous AI agent platforms, and modern high-concurrency enterprise applications.
             </p>
 
             <div className="flex items-center gap-3 pt-1">
@@ -65,27 +75,28 @@ export default function Footer() {
               Engineering Services
             </h4>
             <ul className="space-y-2">
-              <li><a href="#services" className="hover:text-cyan-400 transition-colors">Enterprise Software</a></li>
-              <li><a href="#services" className="hover:text-cyan-400 transition-colors">Applied AI & Swarms</a></li>
-              <li><a href="#services" className="hover:text-cyan-400 transition-colors">Cloud & Kubernetes</a></li>
-              <li><a href="#services" className="hover:text-cyan-400 transition-colors">Modern Web Apps</a></li>
-              <li><a href="#services" className="hover:text-cyan-400 transition-colors">Mobile Platforms</a></li>
-              <li><a href="#services" className="hover:text-cyan-400 transition-colors">SOC 2 Hardening</a></li>
+              <li><a href="#services" className="hover:text-orange-400 transition-colors">Enterprise Software</a></li>
+              <li><a href="#services" className="hover:text-orange-400 transition-colors">Applied AI & Swarms</a></li>
+              <li><a href="#services" className="hover:text-orange-400 transition-colors">Cloud & Kubernetes</a></li>
+              <li><a href="#services" className="hover:text-orange-400 transition-colors">Modern Web Apps</a></li>
+              <li><a href="#services" className="hover:text-orange-400 transition-colors">Mobile Platforms</a></li>
+              <li><a href="#services" className="hover:text-orange-400 transition-colors">SOC 2 Hardening</a></li>
             </ul>
           </div>
 
           {/* Solutions & Resources (2 cols) */}
           <div className="lg:col-span-2 space-y-3">
             <h4 className="text-white font-bold text-xs uppercase tracking-wider">
-              Navigation
+              Company & Culture
             </h4>
             <ul className="space-y-2">
-              <li><a href="#case-studies" className="hover:text-cyan-400 transition-colors">Case Studies</a></li>
-              <li><a href="#tech-stack" className="hover:text-cyan-400 transition-colors">Tech Matrix</a></li>
-              <li><a href="#process" className="hover:text-cyan-400 transition-colors">Sprint Engine</a></li>
-              <li><a href="#estimator" className="hover:text-cyan-400 transition-colors">Cost Estimator</a></li>
-              <li><a href="#faq" className="hover:text-cyan-400 transition-colors">Client FAQ</a></li>
-              <li><a href="#contact" className="hover:text-cyan-400 transition-colors">Discovery Call</a></li>
+              <li><a href="#leadership" className="hover:text-orange-400 transition-colors flex items-center gap-1.5 font-semibold text-slate-200"><Users className="w-3.5 h-3.5 text-orange-400" /> Leadership Team</a></li>
+              <li><a href="#case-studies" className="hover:text-orange-400 transition-colors">Case Studies</a></li>
+              <li><a href="#tech-stack" className="hover:text-orange-400 transition-colors">Tech Matrix</a></li>
+              <li><a href="#process" className="hover:text-orange-400 transition-colors">Sprint Engine</a></li>
+              <li><a href="#estimator" className="hover:text-orange-400 transition-colors">Cost Estimator</a></li>
+              <li><a href="#faq" className="hover:text-orange-400 transition-colors">Client FAQ</a></li>
+              <li><a href="#contact" className="hover:text-orange-400 transition-colors">Discovery Call</a></li>
             </ul>
           </div>
 
@@ -111,11 +122,11 @@ export default function Footer() {
                   placeholder="cto@company.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-slate-900 border border-slate-800 focus:border-indigo-500 rounded-xl px-3.5 py-2 text-xs text-white placeholder-slate-500 focus:outline-none"
+                  className="w-full bg-slate-900 border border-slate-800 focus:border-orange-500 rounded-xl px-3.5 py-2 text-xs text-white placeholder-slate-500 focus:outline-none"
                 />
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-semibold flex items-center justify-center shrink-0 transition-colors"
+                  className="px-4 py-2 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-400 hover:to-pink-400 text-white rounded-xl font-semibold flex items-center justify-center shrink-0 transition-colors"
                 >
                   <Send className="w-3.5 h-3.5" />
                 </button>
@@ -133,7 +144,7 @@ export default function Footer() {
         <div className="py-6 border-b border-slate-800/60 flex flex-wrap items-center justify-between gap-4 text-[11px]">
           <div className="flex flex-wrap items-center gap-4 text-slate-400">
             <span className="flex items-center gap-1.5 text-slate-300 font-medium">
-              <ShieldCheck className="w-4 h-4 text-cyan-400" />
+              <ShieldCheck className="w-4 h-4 text-orange-400" />
               SOC 2 Type II Certified
             </span>
             <span>•</span>
@@ -148,7 +159,7 @@ export default function Footer() {
             </span>
             <span>•</span>
             <span className="flex items-center gap-1.5 text-slate-300 font-medium">
-              <Award className="w-4 h-4 text-indigo-400" />
+              <Award className="w-4 h-4 text-purple-400" />
               Google Cloud Certified Architects
             </span>
           </div>

@@ -30,6 +30,24 @@ export interface CaseStudy {
   gradient: string;
 }
 
+export interface Leader {
+  name: string;
+  role: string;
+  title: string;
+  initials: string;
+  badge: string;
+  bio: string;
+  quote: string;
+  expertise: string[];
+  metric: { label: string; value: string };
+  links: {
+    linkedin?: string;
+    github?: string;
+    email?: string;
+  };
+  gradient: string;
+}
+
 export interface Testimonial {
   id: string;
   author: string;
@@ -49,8 +67,11 @@ export interface FaqItem {
 
 export const COMPANY_INFO = {
   name: "CODEPROGENS INNOVATIONS",
-  shortName: "CODEPROGENS",
-  tagline: "Engineering Next-Gen Software & Intelligent Systems",
+  brandName: "CODEPROGEN",
+  tagline: "INNOVATE. CREATE. GROW.",
+  subTagline: "Engineering Next-Gen Enterprise Software & Applied AI Systems",
+  logoPath: "/logo.jpg",
+  emblemPath: "/emblem.jpg",
   establishedYear: 2021,
   contactEmail: "inquiries@codeprogens.com",
   phone: "+1 (888) 420-PROG / +91 (80) 4120-9800",
@@ -67,6 +88,52 @@ export const COMPANY_INFO = {
     { label: "Average Time-to-Market Reduction", value: "45%" }
   ]
 };
+
+export const LEADERSHIP: Leader[] = [
+  {
+    name: "Harsh Goyal",
+    role: "CEO & Founder",
+    title: "Chief Executive Officer & Co-Founder",
+    initials: "HG",
+    badge: "Executive Leadership & Tech Strategy",
+    bio: "Pioneering the corporate vision, product architecture, and technological roadmap of CODEPROGENS INNOVATIONS. Harsh brings deep architectural mastery in distributed cloud platforms, multi-agent AI ecosystems, and high-velocity engineering cultures. Under his leadership, CODEPROGENS has scaled to deliver resilient software for enterprise clients and venture-backed scale-ups across 18+ countries.",
+    quote: "True innovation isn't just about shipping code rapidly; it's about engineering resilient, self-healing architectures with zero technical debt that power mission-critical operations for years to come.",
+    expertise: [
+      "Enterprise System Architecture & Distributed Systems",
+      "Applied Generative AI & Autonomous Agent Swarms",
+      "Global Engineering Strategy & Technical Execution",
+      "High-Velocity Agile Sprint Engines"
+    ],
+    metric: { label: "Enterprise Deployments Directed", value: "140+" },
+    links: {
+      linkedin: "https://linkedin.com",
+      github: "https://github.com",
+      email: "harsh@codeprogens.com"
+    },
+    gradient: "from-orange-500 via-pink-500 to-purple-600"
+  },
+  {
+    name: "Vinay",
+    role: "CFO & Founder",
+    title: "Chief Financial Officer & Co-Founder",
+    initials: "V",
+    badge: "Fiscal Strategy & Enterprise Governance",
+    bio: "Directing financial strategy, capital allocation, enterprise contract structures, and operational governance at CODEPROGENS INNOVATIONS. Vinay ensures fiscal resilience, sustainable growth margins, and clear ROI realization for every enterprise engagement. His stewardship bridges technical execution with commercial discipline, building enduring client partnerships.",
+    quote: "Technological transformation requires unshakeable financial clarity, transparent milestone governance, and predictable value delivery for every client investment.",
+    expertise: [
+      "Financial Strategy & Capital Allocation",
+      "Enterprise SaaS Economics & SLA Structuring",
+      "Risk Mitigation & Global Regulatory Compliance",
+      "Operational Scalability & Client ROI Optimization"
+    ],
+    metric: { label: "Average Enterprise Client ROI", value: "3.8x" },
+    links: {
+      linkedin: "https://linkedin.com",
+      email: "vinay@codeprogens.com"
+    },
+    gradient: "from-purple-600 via-pink-500 to-orange-500"
+  }
+];
 
 export const SERVICES_DATA: ServiceItem[] = [
   {
@@ -281,7 +348,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "VP of Product Engineering",
     company: "BioRadiance Medical",
     avatarText: "DC",
-    content: "Building HIPAA-compliant AI pipelines is extraordinarily difficult. The CODEPROGENS team designed our multi-agent architecture with immaculate code hygiene and rigorous security protocols. Delivered 3 weeks ahead of schedule.",
+    content: "Building HIPAA-compliant AI pipelines is extraordinarily difficult. The CODEPROGEN team designed our multi-agent architecture with immaculate code hygiene and rigorous security protocols. Delivered 3 weeks ahead of schedule.",
     rating: 5,
     projectScope: "Clinical AI Diagnostics Platform"
   },
@@ -291,7 +358,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "Founder & CEO",
     company: "NexusCloud Technologies",
     avatarText: "ML",
-    content: "We interviewed 8 top software agencies across the US and Europe. CODEPROGENS stood miles ahead in their technical depth, velocity, and commitment to zero tech debt. Our enterprise investors were thrilled.",
+    content: "We interviewed 8 top software agencies across the US and Europe. CODEPROGEN stood miles ahead in their technical depth, velocity, and commitment to zero tech debt. Our enterprise investors were thrilled.",
     rating: 5,
     projectScope: "B2B SaaS Next.js Platform"
   }

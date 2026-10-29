@@ -1,17 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { 
   ArrowRight, 
-  Terminal, 
   Cpu, 
-  ShieldCheck, 
   Sparkles, 
   CheckCircle2, 
-  Zap,
-  Globe2,
-  TrendingUp,
-  Server
+  Flame,
+  Layers,
+  Terminal,
+  ShieldCheck
 } from "lucide-react";
 import { COMPANY_INFO } from "@/data/content";
 
@@ -19,7 +18,7 @@ export default function Hero() {
   const [activeTab, setActiveTab] = useState<"arch" | "ai" | "deploy">("arch");
 
   const terminalSnippets = {
-    arch: `// CODEPROGENS Enterprise Architecture Pipeline
+    arch: `// CODEPROGEN Enterprise Architecture Pipeline
 export async function initializeMicroservicesCluster() {
   const mesh = await ServiceMesh.connect({
     regions: ["us-east-1", "eu-central-1", "ap-southeast-1"],
@@ -63,10 +62,10 @@ $ codeprogens-cli deploy --cluster production-fleet
 
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-grid-pattern">
-      {/* Background Radial Glow Orbs */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[380px] bg-indigo-600/15 blur-[120px] rounded-full pointer-events-none"></div>
-      <div className="absolute top-1/3 left-1/4 w-[350px] h-[250px] bg-cyan-500/15 blur-[100px] rounded-full pointer-events-none"></div>
-      <div className="absolute top-1/2 right-1/4 w-[400px] h-[300px] bg-purple-600/10 blur-[130px] rounded-full pointer-events-none"></div>
+      {/* Background Radial Glow Orbs tailored to the logo's orange, pink & purple gradient */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[380px] bg-gradient-to-r from-orange-600/15 via-pink-600/15 to-purple-600/20 blur-[130px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-1/3 left-1/4 w-[350px] h-[250px] bg-orange-500/15 blur-[120px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-1/2 right-1/4 w-[400px] h-[300px] bg-purple-600/15 blur-[130px] rounded-full pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -74,14 +73,14 @@ $ codeprogens-cli deploy --cluster production-fleet
           {/* Left Column: Hero Copy & Value Prop */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             
-            {/* Top Pill Announcement */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-950/70 border border-indigo-800/60 shadow-inner">
-              <span className="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping"></span>
-              <span className="text-xs font-semibold text-cyan-300 tracking-wide uppercase">
-                Enterprise Engineering & Applied AI
+            {/* Top Pill Announcement with Official Motto */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 shadow-inner">
+              <span className="flex h-2 w-2 rounded-full bg-orange-400 animate-ping"></span>
+              <span className="text-xs font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 uppercase tracking-widest font-mono">
+                {COMPANY_INFO.tagline}
               </span>
-              <span className="text-slate-400 text-xs hidden sm:inline">|</span>
-              <span className="text-slate-300 text-xs hidden sm:inline flex items-center gap-1">
+              <span className="text-slate-500 text-xs hidden sm:inline">|</span>
+              <span className="text-slate-300 text-xs hidden sm:inline flex items-center gap-1 font-medium">
                 <Sparkles className="w-3 h-3 text-amber-400" />
                 Zero Tech Debt Guarantee
               </span>
@@ -90,31 +89,31 @@ $ codeprogens-cli deploy --cluster production-fleet
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
               Architecting Bold Ideas Into{" "}
-              <span className="gradient-text-accent">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400">
                 Mission-Critical Software.
               </span>
             </h1>
 
             {/* Sub-text */}
             <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-              <strong className="text-white font-semibold">{COMPANY_INFO.name}</strong> is a high-velocity software engineering consultancy. We design, build, and scale resilient cloud backends, autonomous AI agent workflows, and modern high-performance web and mobile platforms.
+              <strong className="text-white font-semibold">{COMPANY_INFO.name}</strong> is a high-velocity software engineering consultancy. Led by founders <strong>Harsh Goyal</strong> (CEO) and <strong>Vinay</strong> (CFO), we engineer resilient cloud backends, autonomous AI agent platforms, and modern enterprise products.
             </p>
 
             {/* Dual CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
               <a
                 href="#contact"
-                className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white font-bold text-sm shadow-xl shadow-indigo-600/30 hover:shadow-indigo-600/50 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
+                className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 hover:from-orange-400 hover:to-purple-500 text-white font-bold text-sm shadow-xl shadow-pink-600/30 hover:shadow-pink-600/50 transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span>Schedule Discovery Session</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="#estimator"
+                href="#leadership"
                 className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 hover:border-slate-600 text-slate-200 hover:text-white font-semibold text-sm transition-all duration-200"
               >
-                <Cpu className="w-4 h-4 text-cyan-400" />
-                <span>Calculate Project Scope</span>
+                <span>Meet Our Leadership</span>
+                <ArrowRight className="w-3.5 h-3.5 text-orange-400" />
               </a>
             </div>
 
@@ -136,9 +135,42 @@ $ codeprogens-cli deploy --cluster production-fleet
 
           </div>
 
-          {/* Right Column: Interactive Code & Architecture Terminal */}
-          <div className="lg:col-span-5">
-            <div className="relative rounded-2xl bg-slate-900/90 border border-slate-700/70 shadow-2xl backdrop-blur-xl overflow-hidden glow-indigo">
+          {/* Right Column: Interactive Code & Architecture Terminal with Company Brand Badge */}
+          <div className="lg:col-span-5 space-y-4">
+            
+            {/* Logo Highlight Card */}
+            <div className="relative rounded-2xl bg-gradient-to-b from-slate-900/90 to-slate-950/90 border border-slate-700/70 p-4 shadow-xl backdrop-blur-xl flex items-center gap-4">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden border border-slate-700 shrink-0 bg-slate-950 shadow-md">
+                <Image
+                  src="/logo.jpg"
+                  alt="CODEPROGEN Logo Mark"
+                  fill
+                  className="object-contain p-1"
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-mono font-bold text-white tracking-wider">
+                    OFFICIAL BRAND EMBLEM
+                  </span>
+                  <span className="text-[10px] text-emerald-400 font-mono flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    VERIFIED
+                  </span>
+                </div>
+                <p className="text-xs text-slate-300 font-mono mt-0.5 truncate">
+                  &lt;CODEPROGEN /&gt;
+                </p>
+                <div className="mt-1 flex items-center gap-1.5">
+                  <span className="text-[10px] font-bold text-orange-400 uppercase tracking-widest font-mono">
+                    INNOVATE • CREATE • GROW
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Terminal Window */}
+            <div className="relative rounded-2xl bg-slate-900/90 border border-slate-700/70 shadow-2xl backdrop-blur-xl overflow-hidden">
               
               {/* Terminal Window Header */}
               <div className="flex items-center justify-between px-4 py-3 bg-slate-950/80 border-b border-slate-800">
@@ -154,7 +186,7 @@ $ codeprogens-cli deploy --cluster production-fleet
                   <button
                     onClick={() => setActiveTab("arch")}
                     className={`text-[11px] font-medium px-2 py-0.5 rounded transition-colors ${
-                      activeTab === "arch" ? "bg-indigo-600 text-white" : "text-slate-400 hover:text-slate-200"
+                      activeTab === "arch" ? "bg-gradient-to-r from-orange-500 to-pink-500 text-white font-bold" : "text-slate-400 hover:text-slate-200"
                     }`}
                   >
                     Architecture
@@ -162,7 +194,7 @@ $ codeprogens-cli deploy --cluster production-fleet
                   <button
                     onClick={() => setActiveTab("ai")}
                     className={`text-[11px] font-medium px-2 py-0.5 rounded transition-colors ${
-                      activeTab === "ai" ? "bg-indigo-600 text-white" : "text-slate-400 hover:text-slate-200"
+                      activeTab === "ai" ? "bg-gradient-to-r from-orange-500 to-pink-500 text-white font-bold" : "text-slate-400 hover:text-slate-200"
                     }`}
                   >
                     AI Swarm
@@ -170,7 +202,7 @@ $ codeprogens-cli deploy --cluster production-fleet
                   <button
                     onClick={() => setActiveTab("deploy")}
                     className={`text-[11px] font-medium px-2 py-0.5 rounded transition-colors ${
-                      activeTab === "deploy" ? "bg-indigo-600 text-white" : "text-slate-400 hover:text-slate-200"
+                      activeTab === "deploy" ? "bg-gradient-to-r from-orange-500 to-pink-500 text-white font-bold" : "text-slate-400 hover:text-slate-200"
                     }`}
                   >
                     Deploy
@@ -179,7 +211,7 @@ $ codeprogens-cli deploy --cluster production-fleet
               </div>
 
               {/* Code Editor Body */}
-              <div className="p-4 sm:p-5 font-mono text-xs text-slate-300 overflow-x-auto min-h-[290px] leading-relaxed bg-[#06080e]">
+              <div className="p-4 sm:p-5 font-mono text-xs text-slate-300 overflow-x-auto min-h-[260px] leading-relaxed bg-[#06080e]">
                 <pre className="text-emerald-400/90 whitespace-pre">
                   <code>{terminalSnippets[activeTab]}</code>
                 </pre>
@@ -194,6 +226,7 @@ $ codeprogens-cli deploy --cluster production-fleet
                 <span className="text-slate-500">Latency: 28ms</span>
               </div>
             </div>
+
           </div>
 
         </div>
@@ -202,13 +235,13 @@ $ codeprogens-cli deploy --cluster production-fleet
         <div className="mt-16 pt-10 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-sm">
             <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">140+</div>
-            <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider mt-1">Deployments</div>
+            <div className="text-xs text-orange-400 font-semibold uppercase tracking-wider mt-1">Deployments</div>
             <div className="text-xs text-slate-400 mt-0.5">Production-ready shipped apps</div>
           </div>
 
           <div className="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-sm">
             <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">99.98%</div>
-            <div className="text-xs text-indigo-400 font-semibold uppercase tracking-wider mt-1">Uptime SLA</div>
+            <div className="text-xs text-pink-400 font-semibold uppercase tracking-wider mt-1">Uptime SLA</div>
             <div className="text-xs text-slate-400 mt-0.5">High availability architecture</div>
           </div>
 

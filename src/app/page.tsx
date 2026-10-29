@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import TechStack from "@/components/TechStack";
 import CaseStudies from "@/components/CaseStudies";
+import LeadershipSection from "@/components/LeadershipSection";
 import EngineeringProcess from "@/components/EngineeringProcess";
 import ProjectEstimator from "@/components/ProjectEstimator";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -22,13 +23,13 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[#07090E] text-slate-100 flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
+    <div className="min-h-screen bg-[#060B18] text-slate-100 flex flex-col font-sans selection:bg-pink-500 selection:text-white">
       {/* Sticky Header Navigation */}
       <Navbar />
 
       {/* Main Content Sections */}
       <main className="flex-1">
-        {/* Hero Section */}
+        {/* Hero Section with Official Logo & Brand Statement */}
         <Hero />
 
         {/* Core Services Section */}
@@ -39,6 +40,9 @@ export default function Home() {
 
         {/* Real-World Production Case Studies */}
         <CaseStudies />
+
+        {/* Meet Our Leadership: Harsh Goyal (CEO) & Vinay (CFO) */}
+        <LeadershipSection />
 
         {/* 4-Phase Sprint Engineering Methodology */}
         <EngineeringProcess />
@@ -59,7 +63,7 @@ export default function Home() {
         <ContactSection prefilledScope={prefilledScope} />
       </main>
 
-      {/* Corporate Footer */}
+      {/* Corporate Footer with Official Logo */}
       <Footer />
     </div>
   );
