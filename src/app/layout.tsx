@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://codeprogens.com"),
   title: "CODEPROGEN | Innovate • Create • Grow | Enterprise Software & AI",
   description:
-    "CODEPROGEN INNOVATIONS engineers mission-critical enterprise software, agentic AI platforms, resilient cloud architectures, and modern digital products. Founded by Harsh Goyal (CEO) and Vinay (CFO).",
+    "CODEPROGEN INNOVATIONS engineers mission-critical enterprise software, agentic AI platforms, resilient cloud architectures, and modern digital products. Founded by Harsh Goyal (CEO) and Vinay (CTO).",
   keywords: [
     "CODEPROGEN",
     "CODEPROGENS INNOVATIONS",

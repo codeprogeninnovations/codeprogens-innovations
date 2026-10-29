@@ -57,7 +57,7 @@ export default function Footer() {
             </a>
 
             <p className="text-slate-400 leading-relaxed text-xs">
-              Premier software engineering and digital transformation partner founded by Harsh Goyal (CEO) and Vinay (CFO). We architect, engineer, and deploy resilient cloud backends, autonomous AI agent platforms, and modern high-concurrency enterprise applications.
+              Premier software engineering and digital transformation partner founded by Harsh Goyal (CEO) and Vinay (CTO). We architect, engineer, and deploy resilient cloud backends, autonomous AI agent platforms, and modern high-concurrency enterprise applications.
             </p>
 
             <div className="flex items-center gap-3 pt-1">

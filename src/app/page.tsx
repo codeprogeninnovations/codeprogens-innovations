@@ -41,7 +41,7 @@ export default function Home() {
         {/* Real-World Production Case Studies */}
         <CaseStudies />
 
-        {/* Meet Our Leadership: Harsh Goyal (CEO) & Vinay (CFO) */}
+        {/* Meet Our Leadership: Harsh Goyal (CEO) & Vinay (CTO) */}
         <LeadershipSection />
 
         {/* 4-Phase Sprint Engineering Methodology */}

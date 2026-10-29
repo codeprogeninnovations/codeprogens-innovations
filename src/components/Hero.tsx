@@ -127,7 +127,7 @@ $ codeprogens-cli deploy --cluster production-fleet
 
             {/* Sub-text */}
             <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-              <strong className="text-white font-semibold">{COMPANY_INFO.name}</strong> is a high-velocity software engineering consultancy. Led by founders <strong>Harsh Goyal</strong> (CEO) and <strong>Vinay</strong> (CFO), we engineer resilient cloud backends, autonomous AI agent platforms, and modern enterprise products.
+              <strong className="text-white font-semibold">{COMPANY_INFO.name}</strong> is a high-velocity software engineering consultancy. Led by founders <strong>Harsh Goyal</strong> (CEO) and <strong>Vinay</strong> (CTO), we engineer resilient cloud backends, autonomous AI agent platforms, and modern enterprise products.
             </p>
 
             {/* Dual CTAs */}

@@ -75,11 +75,23 @@ export const COMPANY_INFO = {
   establishedYear: 2021,
   contactEmail: "inquiries@codeprogens.com",
   phone: "+1 (888) 420-PROG / +91 (80) 4120-9800",
-  headquarters: "San Francisco, CA & Bengaluru Tech Hub",
+  headquarters: "1st Floor, Enkay Towers, Phase V, Udyog Vihar, Sector 19, Gurugram, Haryana 122016",
   addressList: [
-    { city: "San Francisco", region: "North America", address: "548 Market St, Suite 7820, San Francisco, CA 94104" },
-    { city: "Bengaluru", region: "Asia Pacific", address: "Outer Ring Road, Kadubeesanahalli, Bengaluru, Karnataka 560103" },
-    { city: "London", region: "Europe", address: "100 Bishopsgate, Level 19, London EC2N 4AG, UK" }
+    { 
+      city: "Gurugram (HQ)", 
+      region: "Global Headquarters", 
+      address: "1st Floor, Enkay Towers, Phase V, Udyog Vihar, Sector 19, Gurugram, Haryana 122016" 
+    },
+    { 
+      city: "San Francisco", 
+      region: "North America Hub", 
+      address: "548 Market St, Suite 7820, San Francisco, CA 94104" 
+    },
+    { 
+      city: "London", 
+      region: "European Gateway", 
+      address: "100 Bishopsgate, Level 19, London EC2N 4AG, UK" 
+    }
   ],
   stats: [
     { label: "Successful Production Deployments", value: "140+" },
@@ -114,21 +126,22 @@ export const LEADERSHIP: Leader[] = [
   },
   {
     name: "Vinay",
-    role: "CFO & Founder",
-    title: "Chief Financial Officer & Co-Founder",
+    role: "CTO & Founder",
+    title: "Chief Technology Officer & Co-Founder",
     initials: "V",
-    badge: "Fiscal Strategy & Enterprise Governance",
-    bio: "Directing financial strategy, capital allocation, enterprise contract structures, and operational governance at CODEPROGENS INNOVATIONS. Vinay ensures fiscal resilience, sustainable growth margins, and clear ROI realization for every enterprise engagement. His stewardship bridges technical execution with commercial discipline, building enduring client partnerships.",
-    quote: "Technological transformation requires unshakeable financial clarity, transparent milestone governance, and predictable value delivery for every client investment.",
+    badge: "Core Technology & Infrastructure Architecture",
+    bio: "Directing deep technological innovation, cloud infrastructure, AI model pipelines, and systems engineering at CODEPROGENS INNOVATIONS. Vinay leads the technical implementation teams, ensuring high-throughput microservices, robust DevOps automation, and cutting-edge software standards for enterprise clients across the globe.",
+    quote: "Engineering excellence lies in translating complex algorithmic problems into elegant, fault-tolerant production systems that perform flawlessly under extreme load.",
     expertise: [
-      "Financial Strategy & Capital Allocation",
-      "Enterprise SaaS Economics & SLA Structuring",
-      "Risk Mitigation & Global Regulatory Compliance",
-      "Operational Scalability & Client ROI Optimization"
+      "Distributed Systems & Cloud Architecture",
+      "AI Model Pipelines & Real-Time Engineering",
+      "DevOps Automation & Kubernetes Infrastructure",
+      "High-Concurrency Scalability & Microservices"
     ],
-    metric: { label: "Average Enterprise Client ROI", value: "3.8x" },
+    metric: { label: "System Scalability Benchmark", value: "99.99%" },
     links: {
       linkedin: "https://linkedin.com",
+      github: "https://github.com",
       email: "vinay@codeprogens.com"
     },
     gradient: "from-purple-600 via-pink-500 to-orange-500"
