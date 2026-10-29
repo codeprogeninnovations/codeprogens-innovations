@@ -34,12 +34,12 @@ export default function Footer() {
           {/* Brand Info (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
             <a href="#" className="flex items-center gap-3">
-              <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-slate-800 bg-slate-950 shrink-0">
+              <div className="relative w-14 h-10 rounded-xl overflow-hidden border border-slate-800 bg-[#060b18] shrink-0">
                 <Image
                   src="/logo.jpg"
-                  alt="CODEPROGEN Logo"
+                  alt="CODEPROGEN Logo Emblem"
                   fill
-                  className="object-cover scale-150"
+                  className="object-contain p-1"
                 />
               </div>
               <div className="flex flex-col">
@@ -47,12 +47,12 @@ export default function Footer() {
                   <span className="font-black tracking-wider text-white text-base font-mono">
                     CODEPROGEN
                   </span>
-                  <span className="text-[10px] text-orange-400 font-sans font-bold px-1.5 py-0.5 rounded bg-orange-950/50 border border-orange-800/40">
+                  <span className="text-[10px] text-orange-400 font-sans font-bold px-1.5 py-0.5 rounded bg-orange-950/60 border border-orange-800/40">
                     INNOVATIONS
                   </span>
                 </div>
-                <span className="text-[9px] text-slate-400 font-semibold tracking-widest uppercase">
-                  INNOVATE • CREATE • GROW
+                <span className="text-[9px] text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 font-bold tracking-widest uppercase">
+                  INNOVATE. CREATE. GROW.
                 </span>
               </div>
             </a>

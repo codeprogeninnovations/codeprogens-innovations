@@ -140,7 +140,7 @@ $ codeprogens-cli deploy --cluster production-fleet
             
             {/* Logo Highlight Card */}
             <div className="relative rounded-2xl bg-gradient-to-b from-slate-900/90 to-slate-950/90 border border-slate-700/70 p-4 shadow-xl backdrop-blur-xl flex items-center gap-4">
-              <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden border border-slate-700 shrink-0 bg-slate-950 shadow-md">
+              <div className="relative w-20 h-16 sm:w-24 sm:h-18 rounded-xl overflow-hidden border border-slate-700 shrink-0 bg-[#060b18] shadow-md">
                 <Image
                   src="/logo.jpg"
                   alt="CODEPROGEN Logo Mark"
@@ -159,11 +159,11 @@ $ codeprogens-cli deploy --cluster production-fleet
                   </span>
                 </div>
                 <p className="text-xs text-slate-300 font-mono mt-0.5 truncate">
-                  &lt;CODEPROGEN /&gt;
+                  &lt;CODEPROGEN INNOVATIONS /&gt;
                 </p>
                 <div className="mt-1 flex items-center gap-1.5">
-                  <span className="text-[10px] font-bold text-orange-400 uppercase tracking-widest font-mono">
-                    INNOVATE • CREATE • GROW
+                  <span className="text-[11px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 uppercase tracking-widest font-mono">
+                    INNOVATE. CREATE. GROW.
                   </span>
                 </div>
               </div>

@@ -7,8 +7,7 @@ import {
   X, 
   ChevronRight, 
   PhoneCall, 
-  Calculator,
-  Users
+  Calculator
 } from "lucide-react";
 import { COMPANY_INFO } from "@/data/content";
 
@@ -38,7 +37,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#07090e]/90 backdrop-blur-md border-b border-slate-800/80 shadow-2xl py-3"
+          ? "bg-[#060b18]/90 backdrop-blur-md border-b border-slate-800/80 shadow-2xl py-3"
           : "bg-transparent py-4 sm:py-5"
       }`}
     >
@@ -47,13 +46,13 @@ export default function Navbar() {
           
           {/* Brand Logo with Official Graphic */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="relative flex items-center justify-center h-10 w-10 sm:h-11 sm:w-11 rounded-xl bg-slate-950/80 border border-slate-800/80 overflow-hidden shadow-lg shadow-orange-500/10 group-hover:border-orange-500/50 transition-all duration-300">
+            <div className="relative flex items-center justify-center h-10 w-13 sm:h-11 sm:w-15 rounded-xl bg-[#060b18] border border-slate-800/90 overflow-hidden shadow-lg shadow-orange-500/10 group-hover:border-orange-500/50 transition-all duration-300">
               <Image
                 src="/logo.jpg"
-                alt="CODEPROGEN Logo"
+                alt="CODEPROGEN Logo Emblem"
                 fill
                 priority
-                className="object-cover scale-150 group-hover:scale-160 transition-transform duration-300"
+                className="object-contain p-1 group-hover:scale-105 transition-transform duration-300"
               />
             </div>
 
@@ -62,12 +61,12 @@ export default function Navbar() {
                 <span className="font-black tracking-wider text-white text-base sm:text-lg font-mono">
                   CODEPROGEN
                 </span>
-                <span className="text-[10px] text-orange-400 font-sans font-bold px-1.5 py-0.5 rounded bg-orange-950/50 border border-orange-800/40">
+                <span className="text-[10px] text-orange-400 font-sans font-bold px-1.5 py-0.5 rounded bg-orange-950/60 border border-orange-800/40">
                   INNOVATIONS
                 </span>
               </div>
-              <span className="text-[9px] text-slate-400 font-semibold tracking-widest uppercase -mt-0.5 hidden sm:inline-block">
-                INNOVATE • CREATE • GROW
+              <span className="text-[9px] text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 font-bold tracking-widest uppercase -mt-0.5 hidden sm:inline-block">
+                INNOVATE. CREATE. GROW.
               </span>
             </div>
           </a>
@@ -120,9 +119,11 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#0a0e1a]/95 backdrop-blur-xl border-b border-slate-800 px-4 pt-4 pb-6 mt-3 shadow-2xl transition-all">
           <div className="flex flex-col gap-2">
-            <div className="px-3 py-2 bg-orange-950/40 border border-orange-800/40 rounded-xl flex items-center gap-2 text-xs text-orange-300 mb-2">
+            <div className="px-3 py-2 bg-orange-950/40 border border-orange-800/40 rounded-xl flex items-center justify-between text-xs text-orange-300 mb-2">
+              <span className="font-bold tracking-widest text-[10px] uppercase font-mono">
+                INNOVATE. CREATE. GROW.
+              </span>
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>Accepting New Enterprise Engagements</span>
             </div>
             {navLinks.map((link) => (
               <a
