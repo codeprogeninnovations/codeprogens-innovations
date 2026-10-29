@@ -28,11 +28,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "CODEPROGENS INNOVATIONS" }],
   icons: {
-    icon: "/logo.jpg",
-    apple: "/logo.jpg",
+    icon: "/company-emblem.jpg",
+    apple: "/company-emblem.jpg",
   },
   openGraph: {
-    title: "CODEPROGEN | Innovate • Create • Grow",
+    title: "CODEPROGEN | INNOVATE. CREATE. GROW.",
     description:
       "Engineering resilient cloud architectures, autonomous AI pipelines, and mission-critical enterprise software.",
     type: "website",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     siteName: "CODEPROGEN INNOVATIONS",
     images: [
       {
-        url: "/logo.jpg",
-        width: 1024,
-        height: 696,
+        url: "/company-emblem.jpg",
+        width: 616,
+        height: 447,
         alt: "CODEPROGEN Innovations Official Logo",
       },
     ],

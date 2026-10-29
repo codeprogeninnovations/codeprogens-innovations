@@ -140,12 +140,11 @@ $ codeprogens-cli deploy --cluster production-fleet
             
             {/* Logo Highlight Card */}
             <div className="relative rounded-2xl bg-gradient-to-b from-slate-900/90 to-slate-950/90 border border-slate-700/70 p-4 shadow-xl backdrop-blur-xl flex items-center gap-4">
-              <div className="relative w-20 h-16 sm:w-24 sm:h-18 rounded-xl overflow-hidden border border-slate-700 shrink-0 bg-[#060b18] shadow-md">
-                <Image
-                  src="/logo.jpg"
+              <div className="relative rounded-2xl overflow-hidden border border-slate-700 shrink-0 bg-[#060b18] shadow-md p-2 flex items-center justify-center">
+                <img
+                  src="/company-emblem.jpg"
                   alt="CODEPROGEN Logo Mark"
-                  fill
-                  className="object-contain p-1"
+                  className="h-16 sm:h-20 w-auto object-contain"
                 />
               </div>
               <div className="flex-1 min-w-0">
