@@ -67,8 +67,11 @@ export default function Services() {
           {SERVICES_DATA.map((service) => (
             <div
               key={service.id}
-              className="group relative rounded-2xl bg-slate-900/60 hover:bg-slate-900/90 border border-slate-800/80 hover:border-slate-700/80 p-6 sm:p-7 transition-all duration-300 hover:shadow-2xl hover:shadow-indigo-950/50 flex flex-col justify-between glow-card"
+              className="group relative rounded-2xl bg-slate-900/60 hover:bg-slate-900/90 border border-slate-800/80 hover:border-slate-700/80 p-6 sm:p-7 transition-all duration-300 hover:shadow-2xl hover:shadow-indigo-950/50 flex flex-col justify-between glow-card overflow-hidden hover:-translate-y-1"
             >
+              {/* Subtle top laser scan sweep on card */}
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-orange-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-laser"></div>
+
               <div>
                 {/* Header: Icon & Badge */}
                 <div className="flex items-center justify-between mb-5">

@@ -28,7 +28,7 @@
 }
 
 .glow-card:hover {
-  box-shadow: 0 0 35px -5px rgba(244, 63, 94, 0.22);
+  box-shadow: 0 0 40px -5px rgba(244, 63, 94, 0.25);
 }
 
 /* Animated gradient text aligned with the official logo (Orange -> Pink -> Purple) */
@@ -55,6 +55,99 @@
 .bg-dots-pattern {
   background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+/* Custom keyframe animations for high-tech experience */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(1000%);
+  }
+}
+
+@keyframes laserSweep {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 200%;
+  }
+}
+
+@keyframes blinkCursor {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 5s ease-in-out infinite;
+}
+
+.animate-laser {
+  animation: laserSweep 4s ease-in-out infinite;
+}
+
+.animate-blink {
+  animation: blinkCursor 1s infinite;
+}
+
+/* Futuristic HUD corner styling */
+.hud-corner {
+  position: relative;
+}
+.hud-corner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #f97316;
+  border-left: 2px solid #f97316;
+}
+.hud-corner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #a855f7;
+  border-right: 2px solid #a855f7;
 }
 
 /* Custom scrollbar */

@@ -45,8 +45,11 @@ export default function LeadershipSection() {
           {LEADERSHIP.map((leader, idx) => (
             <div
               key={idx}
-              className="relative rounded-3xl bg-slate-900/60 hover:bg-slate-900/90 border border-slate-800/80 hover:border-slate-700/80 p-7 sm:p-9 shadow-2xl backdrop-blur-xl transition-all duration-300 flex flex-col justify-between group glow-card"
+              className="hud-corner relative rounded-3xl bg-slate-900/60 hover:bg-slate-900/90 border border-slate-800/80 hover:border-slate-700/80 p-7 sm:p-9 shadow-2xl backdrop-blur-xl transition-all duration-300 flex flex-col justify-between group glow-card overflow-hidden"
             >
+              {/* Subtle Scanning Beam on Card */}
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-pink-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-laser"></div>
+
               <div>
                 
                 {/* Top Profile Header */}

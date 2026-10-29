@@ -58,7 +58,8 @@ export default function CaseStudies() {
         </div>
 
         {/* Active Case Study Detail Card */}
-        <div className="mt-8 rounded-3xl bg-slate-900/80 border border-slate-700/80 p-6 sm:p-10 shadow-2xl backdrop-blur-xl relative overflow-hidden">
+        <div className="hud-corner mt-8 rounded-3xl bg-slate-900/80 border border-slate-700/80 p-6 sm:p-10 shadow-2xl backdrop-blur-xl relative overflow-hidden">
+          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-80 animate-laser"></div>
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
