@@ -105,7 +105,7 @@ export const LEADERSHIP: Leader[] = [
   {
     name: "Harsh Goyal",
     role: "CEO & Founder",
-    title: "Chief Executive Officer & Co-Founder",
+    title: "Chief Executive Officer & Founder",
     initials: "HG",
     badge: "Executive Leadership & Tech Strategy",
     bio: "Pioneering the corporate vision, product architecture, and technological roadmap of CODEPROGENS INNOVATIONS. Harsh brings deep architectural mastery in distributed cloud platforms, multi-agent AI ecosystems, and high-velocity engineering cultures. Under his leadership, CODEPROGENS has scaled to deliver resilient software for enterprise clients and venture-backed scale-ups across 18+ countries.",
